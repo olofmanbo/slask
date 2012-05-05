@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js?ver=1.4.0"></script> 
+
+<script>
+    $(document).ready(function() { 
+        $.getJSON("http://search.twitter.com/search.json?q=%40twitterapi", function (text) {
+            $("#twitter").text("&"+text+"&");
+        });
+    });
+</script>
+</head>
+
+<body>
+    <div id="twitter">
+    </div>
+</body>
+
+</html>
